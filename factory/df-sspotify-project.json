@@ -1,0 +1,9 @@
+{
+	"name": "df-sspotify-project",
+	"location": "australiaeast",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "6be17ec6-f324-470b-8df2-a84d00a46f84",
+		"tenantId": "e2fcfebb-8b2a-4cc1-b190-2844ed80a149"
+	}
+}
