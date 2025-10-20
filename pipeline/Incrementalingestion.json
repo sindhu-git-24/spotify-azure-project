@@ -152,10 +152,6 @@
 				"typeProperties": {
 					"source": {
 						"type": "JsonSource",
-						"additionalColumns": {
-							"type": "Expression",
-							"value": "@activity('max_cdc').output.resultSets[0].rows[0].cdc"
-						},
 						"storeSettings": {
 							"type": "AzureBlobFSReadSettings",
 							"recursive": true,
@@ -227,7 +223,7 @@
 						{
 							"type": "Query",
 							"text": {
-								"value": "Select max(@{pipeline().parameters.cdc_col}) as cdec from @{pipeline().parameters.schema}.@{pipeline().parameters.table}",
+								"value": "Select max(@{pipeline().parameters.cdc_col}) as cdc from @{pipeline().parameters.schema}.@{pipeline().parameters.table}",
 								"type": "Expression"
 							}
 						}
